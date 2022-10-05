@@ -19,7 +19,7 @@ Slicer config:
 It is necessary to call the Klipper LOG_Z macro from your slicer at every layer change.  You don't need to get fancy and specify any parameters.  Klipper will figure out the current Z, once the macro is invoked. In Cura, you use the Insert At Layer Change post processor, select the Before option, and then type 'LOG_Z' (without the quotes) into the gcode to insert field.  The config for other slicers should be similar
 
 
-Notes:  This tool tries to figure out the temperature of the print prior to failure, proceeding from least to most accurate.  It first adds a call to START_TEMPS (It is advised to add a macro called START_TEMP that heats up your printer to sane values.).  It then scans the gcode for all temperature gcodes up to the time the print frailed, and adds them in that order.  Finally, in the case of Cura, it scans the end gcode for the Cura print settings, and adds the temperatures from there. 
+Notes:  This tool tries to figure out the temperature of the print prior to failure, proceeding from least to most accurate.  It first adds a call to START_TEMPS (It is advised to add a macro called START_TEMPS that heats up your printer to sane values.).  It then scans the gcode for all temperature gcodes up to the time the print frailed, and adds them in that order.  Finally, in the case of Cura, it scans the end gcode for the Cura print settings, and adds the temperatures from there. 
 
 
 Operation:
