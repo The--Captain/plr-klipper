@@ -3,7 +3,7 @@ A simple print recovery system for Klipper
 Klipper config:
 
 To install, add these files somewhere that klipper can access them.  ~/. should be a fine choice, if you have no idea.
-You must then add an [include] directive to add the contents of plr.cfg to your printer.cfg, or just paste it in.
+You must then add an [include] directive to add the contents of plr.cfg to your printer.cfg, or just paste it in.  plr.sh must be marked executable.
 Also, plr.cfg and plr.sh must be modified to reflect the location of your virtual sdcard in Klipper.
 
 In addition, the Kiauh Gcode Shell Command extenstion must be added to Klipper.  You don't need to have Kiuah installed, but you must add gcode_shell_command.py to the contents of your klipper/klippy/extras directory (Extension can be downloaded here: https://github.com/th33xitus/kiauh/blob/master/resources/gcode_shell_command.py )
