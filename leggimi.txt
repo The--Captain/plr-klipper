@@ -1,4 +1,4 @@
-inserire tutti i file qui presenti nella cartell /home/pi/klipper/config
+inserire tutti i file qui presenti nella cartell /home/pi/klipper_config/
 poi...
 
 all'inizio del file: printer.cfg aggiungere:
