@@ -1,0 +1,28 @@
+inserire tutti i file qui presenti nella cartell /home/pi/klipper/config
+poi...
+
+alla fine della macro  [START_PRINT]
+ ma priorio come ultima cosa inserite:
+
+  ############################################################################
+  save_last_file
+  SAVE_VARIABLE VARIABLE=was_interrupted VALUE=True
+  ############################################################################ 
+
+
+
+
+invece all'inizio della macro [END_PRINT] 
+
+allinizio, dopo il comando: 
+gcode:
+
+inserite:
+
+  ################################################################ 
+  clear_last_file
+  SAVE_VARIABLE VARIABLE=was_interrupted VALUE=False
+  ################################################################
+
+
+dovete avere abilitato il plugin "gcode_shell" (lo installata con kiauh)
