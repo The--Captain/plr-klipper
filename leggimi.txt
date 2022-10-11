@@ -1,6 +1,12 @@
 inserire tutti i file qui presenti nella cartell /home/pi/klipper/config
 poi...
 
+all'inizio del file: printer.cfg aggiungere:
+
+############################################
+[include plr.cfg]
+############################################
+
 alla fine della macro  [START_PRINT]
  ma priorio come ultima cosa inserite:
 
@@ -26,3 +32,8 @@ inserite:
 
 
 dovete avere abilitato il plugin "gcode_shell" (lo installata con kiauh)
+
+e nello slicer alla fine di ogni layout (a mezzo relativo pugin, tipo timelapse per intenderci! dovrete inserire questo comando:
+LOG_Z
+
+basta. finito
